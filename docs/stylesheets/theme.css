@@ -1,0 +1,11 @@
+/* テーマ色（ツールが自動生成） */
+:root {
+  --hp-primary: #e8833a;
+  --hp-accent: #4caf9a;
+  --hp-background: #fffaf3;
+  --md-primary-fg-color: var(--hp-primary);
+  --md-primary-fg-color--light: var(--hp-primary);
+  --md-primary-fg-color--dark: var(--hp-primary);
+  --md-accent-fg-color: var(--hp-accent);
+  --md-default-bg-color: var(--hp-background);
+}

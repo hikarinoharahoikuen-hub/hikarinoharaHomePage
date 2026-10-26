@@ -1,0 +1,26 @@
+site_name: 新しいホームページ
+site_description: ''
+theme:
+  name: material
+  language: ja
+  font:
+    text: Zen Maru Gothic
+  palette:
+    primary: custom
+    accent: custom
+  features:
+  - navigation.tabs
+  - navigation.top
+  - navigation.footer
+markdown_extensions:
+- attr_list
+- md_in_html
+- admonition
+- tables
+- toc:
+    permalink: false
+extra_css:
+- stylesheets/theme.css
+- stylesheets/extra.css
+nav:
+- ホーム: index.md
