@@ -1,0 +1,49 @@
+/* レイアウト部品。ページ側では <div class="..." markdown> で囲んで使う */
+
+/* 本文を少し大きく読みやすく */
+.md-typeset { font-size: .85rem; line-height: 1.8; }
+
+/* ヒーロー（ページ冒頭の大きな見出し帯） */
+.hp-hero {
+  background: linear-gradient(135deg, var(--hp-primary), var(--hp-accent));
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+}
+.hp-hero h1 { color: #fff; margin: 0 0 .5rem; font-weight: 700; }
+.hp-hero img { border-radius: .75rem; }
+
+/* 写真付きヒーロー：画像を背景のように右側に置く */
+.hp-hero-photo { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center; }
+
+/* 2段組・3段組 */
+.hp-cols-2, .hp-cols-3 { display: grid; gap: 1.5rem; margin: 1.5rem 0; }
+.hp-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.hp-cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+/* カード */
+.hp-card {
+  background: #fff;
+  border-radius: .75rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
+}
+.hp-card img { border-radius: .5rem; width: 100%; }
+.hp-card h3 { margin-top: .5rem; }
+
+/* お知らせ一覧 */
+.hp-news ul { list-style: none; margin-left: 0; padding: 0; }
+.hp-news li { border-bottom: 1px dashed #ddd; padding: .6rem 0; margin: 0; }
+
+/* 丸い写真・角丸写真 */
+.hp-round { border-radius: 50%; aspect-ratio: 1; object-fit: cover; }
+.hp-rounded { border-radius: .75rem; }
+
+/* 中央寄せ */
+.hp-center { text-align: center; }
+
+@media (max-width: 700px) {
+  .hp-cols-2, .hp-cols-3, .hp-hero-photo { grid-template-columns: 1fr; }
+  .hp-hero { padding: 1.75rem 1.25rem; }
+}
