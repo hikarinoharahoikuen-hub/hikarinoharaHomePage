@@ -10,7 +10,23 @@
 
 ## 園の紹介
 
+<div class="hp-cols-2" markdown>
+
+<div markdown>
+
 〇〇（ここに園の紹介文。園の雰囲気や、大切にしていることを2〜3文で）
+
+</div>
+
+<div markdown>
+
+![門に飾られた「光の原保育園 うんどうかい」の手作り看板](images/undoukai-gate.jpg){ .hp-rounded }
+
+運動会の日の朝。手作りの看板でお迎えしました。
+
+</div>
+
+</div>
 
 ## わたしたちが大切にしていること
 
